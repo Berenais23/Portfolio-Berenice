@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'NeueMontreal-Bold';
+    src: local('NeueMontreal-Bold'), url(font/NeueMontreal-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'NeueMontreal-Regular';
+    src: local('NeueMontreal-Regular'), url(font/NeueMontreal-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'EditorialNew-Ultrabold';
+    src: local('EditorialNew-Ultrabold'), url(font/EditorialNew-Ultrabold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'EditorialNew-Thin';
+    src: local('EditorialNew-Thin'), url(font/EditorialNew-Thin.woff) format('woff');
+}
+
+body {
+    background: #cccccc;
+}
+
+/* riferimento per i calcoli dei rem, 16px = 1rem */
+html {
+    font-size: 16px;
+}
+
+
+/* navbar */
+
+ .nav {
+    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-between;
+    background-color: transparent ;
+    box-shadow: none;
+    z-index: 3; 
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.2rem;
+}
+
+.nav-link {
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1.125rem;
+    color: #ffffff;
+}
+
+
+
+.nav-item {
+    display: flex;
+    margin: none;
+    
+}
+.color-size {
+    font-family: 'NeueMontreal-Bold';
+    font-size: 1.125rem;
+    color: #ffffff;
+}
+
+
+/* Video background */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tasto scroll */
+.scroll {
+    text-align: right;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  
+  }
+  
+  .scroll_1{
+    text-decoration: none;
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1rem;
+    color: #fff;
+    align-items: right;
+  }
+  .scroll_1 .bi-arrow-down {
+    margin-left: 8px; /* Spazio tra il testo e l'icona */
+    transition: transform 0.3s;
+  }
+  .scroll_1:hover .bi-arrow-down {
+    transform: translateY(5px); /* Effetto di movimento al passaggio del mouse */
+  }
+  
+
+
+
+
+/* testo centrale */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+.copy{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/* testo centrale */
+.content_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: right;
+}
+.copy_04{
+    position: absolute;
+    margin-top: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: right;
+
+}
+.copy_3{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+  /* linea progetti */
+  .linea-2 {
+    border-top: 0.5px solid #000; /* Spessore e colore della linea */
+    margin-bottom: 1rem; 
+}
+
+  .linea-3 {
+    border-top: 0.5px solid #000; /* Spessore e colore della linea */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem; 
+}
+
+/* linea footer */
+.linea {
+    border-top: 0.5px solid #000; /* Spessore e colore della linea */
+    margin-top: 5rem;
+    margin-bottom: 2rem; 
+}
+
+/* Lista Progetti */
+
+.list-group-item {
+    background-color: transparent !important;
+    border: none !important; /* Rimuovi eventuali bordi */
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1.5rem;
+    padding: 0;
+   
+}
+
+/* Stili di testo */
+
+h1 {
+    color: black;
+    font-size: 4rem;
+    font-family: 'NeueMontreal-Regular';
+    font-style: normal;
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-family: 'NeueMontreal-Regular';
+    margin-bottom: -0.5rem;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'NeueMontreal-Regular';
+}
+
+h4 {
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1rem;
+    color: #8a8a8a;
+    margin-top: 6rem;
+}
+
+h6 {
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1rem;
+    color: #8a8a8a;
+
+}
+
+.bold {
+    background-color: #8a8a8a;
+    font-family: 'NeueMontreal-Bold';
+    color: #fff;
+}
+.bold_1 {
+    font-family: 'NeueMontreal-Bold';
+}
+
+h5 {
+    font-size: 1rem;
+    font-family: 'NeueMontreal-Regular';
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'NeueMontreal-Regular';
+    font-style: normal;
+    margin-top: -1rem;
+    opacity: 75%;
+}
+
+.grigio{
+    margin-top: 2rem;
+    color: #8a8a8a;
+}
+
+
+.copy_2{
+    color:#8a8a8a;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-block a {
+    text-decoration: none; /* Rimuove l'effetto sottolineato */
+  }
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+.text-start{
+    margin-top: 3rem;
+}
+
+.text-start-uno {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.lista_2 {
+    text-align: right;
+}
+
+.text-start-grigio{
+    font-size: 1.25rem;
+    font-family: 'NeueMontreal-Regular';
+    font-style: normal;
+    color: #8a8a8a;
+}
+
+.text-start-normal{
+    font-size: 1.25rem;
+    font-family: 'NeueMontreal-Regular';
+    font-style: normal;
+    color: #000000;
+}
+
+
+/* immagine */
+
+.img-fluid-vuota{
+    padding-top: 9rem;
+}
+
+.img-fluid{
+    padding-top: 0.1rem;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.img-fluid-inizio{
+    margin-top: 10rem;
+    width: 100%;
+}
+
+.img-fluid-due {
+    margin-top: 2rem;
+}
+
+  .img-fluid-tre {
+    width: 100%;
+}
+
+  .img-fluid-sei{
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* autoplay video */
+
+video {
+    display: block;
+    height: auto;
+    margin: auto;
+    position: relative;
+    width: 100%;
+  }
+
+  .video-wrap:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .vuoto{
+    margin-top: 6rem;
+  }
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+/* testo centrale */
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.copy{
+    position: absolute;
+    top: 97%;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    background-color: transparent;
+    box-shadow: none;
+    z-index: 3;
+    font-size: 1.125rem;
+}
+
+.nav-link {
+    display: flex;
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1.125rem;
+    color: #ffffff;
+    transition: all .15s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #d1860e;
+}
+
+.color-size {
+    font-family: 'NeueMontreal-Bold';
+    font-size: 1.125rem;
+    color: #ffffff;
+}
+
+.color-size-1 {
+    font-family: 'NeueMontreal-Bold';
+    font-size: 2rem;
+    color: #fff;
+}
+   /* Stili di testo */ 
+
+   h1 {
+    color: black;
+    font-size: 7rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin-top: 15rem;
+}
+
+h2 {
+    font-size: 4.3rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p   {
+        font-size: 1.5rem;
+}
+
+
+h4{
+        color: black;
+        font-size: 7rem;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+}
+
+h5 {
+        font-size: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+}
+
+.testo_sovrapposto{
+        margin-top: 0.5rem;
+}
+h6{
+    font-size: 1.5rem;
+}
+.bold {
+    background-color: #8a8a8a;
+    font-family: 'NeueMontreal-Bold';
+    color: #fff;
+    font-size: 1.5rem;
+}
+.bold_1 {
+    font-family: 'NeueMontreal-Bold';
+    font-size: 1.5rem;
+}
+/* titolo */
+
+.img-fluid-inizio{
+    margin-top: 0rem;
+    width: 100%;
+}
+
+.container{
+    font-size: 1.3rem;
+    gap: 3rem;
+  } 
+
+  .text_bold{
+    font-size: 3rem;
+  }
+
+  .margin-text-mobile {
+    margin-top: 1.5rem;
+}
+
+  /* linea progetti */
+  .linea-2 {
+    border-top: 0.5px solid #000; /* Spessore e colore della linea */
+    margin-bottom: 1rem; 
+}
+
+  .linea-3 {
+    border-top: 0.5px solid #000; /* Spessore e colore della linea */
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+}
+
+}
+
+
+
