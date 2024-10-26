@@ -247,6 +247,14 @@ body, html {
     <div id="tooltip">Selected Work</div>
 
 </body>
+<script>/
+  document.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", (event) => {
+        event.preventDefault();
+    });
+});
+</script>
+  
 <script>// Seleziona l'elemento tooltip
   const tooltip = document.getElementById('tooltip');
   
